@@ -1,0 +1,115 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+10 filenames from folder pet_images
+Filename =  Dog_03.jpg     label =  dog
+
+ 1 file:                Dog_03.jpg
+
+Empty dictionary has 0 items
+Filename =  cat_01.jpg     label =  cat
+
+ 2 file:                cat_01.jpg
+
+Empty dictionary has 1 items
+Filename =  Dog_02.jpg     label =  dog
+
+ 3 file:                Dog_02.jpg
+
+Empty dictionary has 2 items
+Filename =  Dog_01.jpg     label =  dog
+
+ 4 file:                Dog_01.jpg
+
+Empty dictionary has 3 items
+
+Printing all key-value pairs in dictionary results_dic:
+
+filename =  Dog_03.jpg     pet label =  dog
+
+filename =  cat_01.jpg     pet label =  cat
+
+filename =  Dog_02.jpg     pet label =  dog
+
+filename =  Dog_01.jpg     pet label =  dog
+
+Empty dictionary has 4 items
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_03.jpg  label:                        dog
+ 2 key:                     cat_01.jpg  label:                        cat
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: dalmatian, coach dog, carriage dog
+
+ NOT A MATCH:
+
+                    Dog_03.jpg: 
+Real:                        dog   Classifier:                 great pyrenees
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier: african hunting dog, hyena dog, cape hunting dog, lycaon pictus
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                tibetan mastiff
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: dalmatian, coach dog, carriage dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                    Dog_03.jpg: 
+Real:                        dog   Classifier:                 great pyrenees  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier: african hunting dog, hyena dog, cape hunting dog, lycaon pictus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                tibetan mastiff  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  3  N NotDog Images:  1 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  33.3
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  3  N NotDog Images:  1 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  33.3
+
+Model used: alexnet
+
+
+Number of Images: 4 
+Number of Dog Images: 3 
+Number of "Not-a" Dog Images: 1
+
+pct_match: 25.0
+pct_correct_dogs: 100.0
+pct_correct_breed: 33.33333333333333
+pct_correct_notdogs: 100.0
+
+MISCLASSIFIED BREEDS: 
+ Pet Image Label: dog 
+ Classifier Label: great pyrenees
+
+MISCLASSIFIED BREEDS: 
+ Pet Image Label: dog 
+ Classifier Label: tibetan mastiff
+
+** Total Elapsed Runtime: 0:0:1
